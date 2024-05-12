@@ -1,16 +1,14 @@
-// index.ts
-import express from 'express';
-import { DB } from "./core/DB"
-import {WatchRouter} from "./routers/WatchRouter";
+import express = require("express");
+import {Application, json} from "express";
+import {watchRouter} from "./routers/WatchRouter";
+const cors = require("cors");
 
+const app: Application = express();
 
-const app = express();
+app.use(json());
+app.use(cors())
+app.use(watchRouter);
 
-
-app.use(WatchRouter);
-
-
-// Start server
 app.listen(3000, () => {
-    console.log(`Server started`);
+    console.log("Connected to PORT 3000");
 });

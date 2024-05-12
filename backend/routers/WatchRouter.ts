@@ -1,12 +1,9 @@
-import {Request, Response, Router} from "express";
-import {WatchController} from "../controllers/WatchController";
+import {Router} from "express";
+import {createWatch, deleteWatch, getWatches, getWatch, updateWatch} from "../controllers/WatchController";
 
-export const WatchRouter = Router();
-
-const watchController = new WatchController();
-
-const getAllWatchesHandler = async (req: Request, res: Response) => {
-    await watchController.getAllWatches(req, res);
-}
-
-WatchRouter.get('/watches',  getAllWatchesHandler)
+export const watchRouter = Router();
+watchRouter.get("/watches", getWatches);
+watchRouter.get("/watch/:id", getWatch);
+watchRouter.post("/watch", createWatch);
+watchRouter.put("/watch/:id", updateWatch);
+watchRouter.delete("/watch/:id", deleteWatch);
