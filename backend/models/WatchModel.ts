@@ -15,7 +15,7 @@ export class WatchModel {
     }
 
     async createWatch(watchData: any) {
-        await this.conn.query("INSERT INTO watches VALUES(NULL, ?, ?, ?)",
+        await this.conn.query("INSERT INTO watches (brand, model, price) VALUES(NULL, ?, ?, ?)",
             [watchData.brand, watchData.model, watchData.price])
     }
 
