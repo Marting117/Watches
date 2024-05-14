@@ -15,7 +15,7 @@ export class WatchModel {
     }
 
     async createWatch(watchData: any) {
-        await this.conn.query("INSERT INTO watches (brand, model, price) VALUES(NULL, ?, ?, ?)",
+        await this.conn.execute("INSERT INTO watches (brand, model, price) VALUES(?, ?, ?)",
             [watchData.brand, watchData.model, watchData.price])
     }
 
@@ -34,7 +34,7 @@ export class WatchModel {
     }
 
     async deleteWatch(id: number) {
-        await this.conn.query("DELETE FROM watches WHERE id = ?",
+        await this.conn.execute("DELETE FROM watches WHERE id = ?",
             [id])
     }
 }

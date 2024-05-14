@@ -6,13 +6,15 @@ import {WatchModel} from "../models/WatchModel";
 
 const db = new DB();
 const watchModel = new WatchModel(db);
+
+
 const getWatches = async (req: Request, res: Response) => {
     const data = await watchModel.getAllWatches();
     res.send(data);
 }
 
 const getWatch = async (req: Request, res: Response) => {
-    const { id } = req.params;
+    const {id} = req.params;
     const data = await watchModel.getSingleWatch(parseInt(id));
     res.send(data);
 }
@@ -28,15 +30,9 @@ const updateWatch = async (req: Request, res: Response) => {
     res.send("Successfully updated watch");
 }
 const deleteWatch = async (req: Request, res: Response) => {
-    const { id } = req.params;
+    const {id} = req.params;
     await watchModel.deleteWatch(parseInt(id));
-    res.send("Successfully deleted watch");
+    return res.send("Successfully deleted watch");
 }
 
-export {
-    getWatches,
-    getWatch,
-    createWatch,
-    updateWatch,
-    deleteWatch
-}
+export {getWatches, getWatch, createWatch, updateWatch, deleteWatch}
