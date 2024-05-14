@@ -1,0 +1,5 @@
+export const Home = () => {
+    return (
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacus purus, gravida eu turpis eget, elementum placerat tortor. Suspendisse mollis, turpis et luctus facilisis, lacus orci tristique lectus, sit amet fermentum tellus dolor a mi. Curabitur eleifend porttitor purus, in dictum libero. Vestibulum varius massa mi, sit amet pulvinar erat ultricies eu. Cras id volutpat felis, id feugiat arcu. Maecenas rutrum ligula quis ex fringilla, id blandit ante posuere. Donec placerat elit eu felis varius, sodales tempor massa blandit. Etiam eget nibh eget nisi hendrerit varius ac eget nunc. Cras eget aliquam libero. Praesent venenatis vulputate egestas. Nam a mattis magna. Sed condimentum euismod ante, nec tristique neque molestie sit amet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sit amet tincidunt nunc. Quisque ut convallis quam. Phasellus justo lacus, rutrum sed lorem non, tincidunt tincidunt velit.</h3>
+    )
+}

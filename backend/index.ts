@@ -9,6 +9,6 @@ app.use(json());
 app.use(cors())
 app.use(watchRouter);
 
-app.listen(3000, () => {
-    console.log("Connected to PORT 3000");
+app.listen(3010, () => {
+    console.log("Server started");
 });
