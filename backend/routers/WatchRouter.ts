@@ -1,5 +1,12 @@
 import {Router} from "express";
-import {createWatch, deleteWatch, getWatches, getWatch, updateWatch} from "../controllers/WatchController";
+import {
+    createWatch,
+    getWatches,
+    getWatch,
+    updateWatch,
+    deleteWatch,
+} from "../controllers/WatchController";
+
 
 export const watchRouter = Router();
 watchRouter.get("/watches", getWatches);

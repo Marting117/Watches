@@ -2,8 +2,6 @@ import {Request, Response} from "express";
 import {DB} from "../core/DB";
 import {WatchModel} from "../models/WatchModel";
 
-
-
 const db = new DB();
 const watchModel = new WatchModel(db);
 
@@ -32,7 +30,8 @@ const updateWatch = async (req: Request, res: Response) => {
 const deleteWatch = async (req: Request, res: Response) => {
     const {id} = req.params;
     await watchModel.deleteWatch(parseInt(id));
-    return res.send("Successfully deleted watch");
+    res.send("Successfully deleted watch");
 }
+
 
 export {getWatches, getWatch, createWatch, updateWatch, deleteWatch}

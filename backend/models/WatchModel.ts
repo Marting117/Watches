@@ -32,9 +32,7 @@ export class WatchModel {
         await this.conn.execute(`UPDATE watches SET ${setStatement} WHERE id = ?`, preparedStatementData);
         return true;
     }
-
     async deleteWatch(id: number) {
-        await this.conn.execute("DELETE FROM watches WHERE id = ?",
-            [id])
+        await this.conn.execute('DELETE FROM watches WHERE id = ?', [id])
     }
 }
