@@ -9,8 +9,8 @@ import {
 
 
 export const watchRouter = Router();
-watchRouter.get("/watches", getWatches);
-watchRouter.get("/watch/:id", getWatch);
-watchRouter.post("/watch", createWatch);
-watchRouter.put("/watch/:id", updateWatch);
-watchRouter.delete("/watch/:id", deleteWatch);
+watchRouter.get("/api/watches", getWatches);
+watchRouter.get("/api/watches/:id", getWatch);
+watchRouter.post("/api/watch", createWatch);
+watchRouter.put("/api/watch/:id", updateWatch);
+watchRouter.delete("/api/watch/:id", deleteWatch);
