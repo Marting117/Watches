@@ -1,5 +1,7 @@
 import { useForm } from "react-hook-form"
+import {useNavigate} from "react-router-dom";
 export const SellAWatch = () => {
+    const navigation = useNavigate();
     const {
         register,
         handleSubmit,
@@ -7,16 +9,37 @@ export const SellAWatch = () => {
     } = useForm();
 
     const onSubmit = (data: any) => {
-        console.log({ data });
+        fetch(`http://localhost:3002/api/watch`, {
+            method: "POST",
+            body: JSON.stringify({
+                brand: data.brand,
+                model: data.model,
+                price: data.price,
+            }),
+            headers: {
+                "Content-Type": "application/json",
+            }
+        }).then();
+        navigation("/buy-a-watch");
     }
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-            <input type={"text"} defaultValue={"dido"} {...register("username")}/>
-            <input type={"text"} {...register("password", {
+            <label>Brand:</label>
+            <input type={"text"} {...register("brand", {
                 required: true
             })}/>
-            {errors.password && <h3>Password is required</h3>}
+            {errors.brand && <h4>Password is required</h4>}
+            <label>Model:</label>
+            <input type={"text"} {...register("model", {
+                required: true
+            })}/>
+            {errors.model && <h4>Password is required</h4>}
+            <label>Price:</label>
+            <input type={"number"} {...register("price", {
+                required: true
+            })}/>
+            {errors.price && <h4>Password is required</h4>}
             <input type={"submit"}/>
         </form>
     )

@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5375e22f-cafc-4ceb-8f1f-195a57f728f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Watch.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Watches" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/WatchController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/WatchController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/routers/WatchRouter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routers/WatchRouter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Buy a watch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Buy a watch.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Sell a watch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Sell a watch.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Watch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Watch.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715700670095</updated>
       <workItem from="1715700671136" duration="1577000" />
-      <workItem from="1715774190467" duration="3595000" />
+      <workItem from="1715774190467" duration="11303000" />
     </task>
     <servers />
   </component>

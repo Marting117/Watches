@@ -1,7 +1,10 @@
 import {useEffect, useState} from "react";
-import {useParams} from "react-router-dom";
+import {useParams, useNavigate} from "react-router-dom";
+
+
 
 export const Watch = () => {
+    const navigation = useNavigate();
     const {id} = useParams();
     const [watch, setWatches] = useState([] as any)
     useEffect(() => {
@@ -13,12 +16,24 @@ export const Watch = () => {
         }
         getWatches().then();
     }, []);
+
+    const deleteWatch= () => {
+        fetch(`http://localhost:3002/api/watch/${id}`, {
+            method: "DELETE",
+        }).then(r => {
+            console.log(r);
+        })
+    navigation("/buy-a-watch");
+}
+
     return (
         <>
-            <p>{watch.brand}</p>
-            <p>{watch.model}</p>
-            <p>{watch.price}</p>
-            <p>{watch.created_at}</p>
+            <p>Brand {watch.brand}</p>
+            <p>Model: {watch.model}</p>
+            <p>Price: {watch.price}$</p>
+            <p>Created at: {watch.created_at}</p>
+            <button onClick={deleteWatch}>Delete Watch</button>
         </>
     )
+
 }
