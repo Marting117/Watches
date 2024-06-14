@@ -4,33 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5375e22f-cafc-4ceb-8f1f-195a57f728f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/uploads/1718373771131-download.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/1718373853992-m128238-0008_collection_upright_landscape.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/1718375133241-download.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/interface/Watch.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Edit Sell a watch.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/WatchController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/WatchController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/WatchModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/WatchModel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routers/WatchRouter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routers/WatchRouter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Buy a watch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Buy a watch.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Sell a watch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Sell a watch.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Watch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Watch.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/design/Layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/multer-config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="5375e22f-cafc-4ceb-8f1f-195a57f728f2" name="Changes" comment="finalizing" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,8 +105,17 @@
       <workItem from="1715795619756" duration="333000" />
       <workItem from="1715804402043" duration="1049000" />
       <workItem from="1715895321762" duration="60000" />
-      <workItem from="1718360632134" duration="14611000" />
+      <workItem from="1718360632134" duration="14917000" />
     </task>
+    <task id="LOCAL-00001" summary="finalizing">
+      <option name="closed" value="true" />
+      <created>1718376597294</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718376597294</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,5 +146,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="finalizing" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalizing" />
   </component>
 </project>
