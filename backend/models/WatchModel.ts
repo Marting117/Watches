@@ -1,5 +1,6 @@
 export class WatchModel {
-    conn;
+    conn; // Assuming db connection object
+
     constructor(db: any) {
         this.conn = db.conn;
     }
@@ -15,8 +16,8 @@ export class WatchModel {
     }
 
     async createWatch(watchData: any) {
-        await this.conn.execute("INSERT INTO watches (brand, model, price) VALUES(?, ?, ?)",
-            [watchData.brand, watchData.model, watchData.price])
+        await this.conn.execute("INSERT INTO watches (brand, model, price, image_url) VALUES(?, ?, ?, ?)",
+            [watchData.brand, watchData.model, watchData.price, watchData.image_url]);
     }
 
     async updateWatch(id: number, watchData: any): Promise<boolean> {
@@ -32,7 +33,8 @@ export class WatchModel {
         await this.conn.execute(`UPDATE watches SET ${setStatement} WHERE id = ?`, preparedStatementData);
         return true;
     }
+
     async deleteWatch(id: number) {
-        await this.conn.execute('DELETE FROM watches WHERE id = ?', [id])
+        await this.conn.execute('DELETE FROM watches WHERE id = ?', [id]);
     }
 }
