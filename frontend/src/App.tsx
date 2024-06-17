@@ -5,6 +5,7 @@ import {BuyAWatch} from "./pages/Buy a watch.tsx";
 import {NotFound} from "./pages/NotFound.tsx";
 import {SellAWatch} from "./pages/Sell a watch.tsx";
 import {Watch} from "./pages/Watch.tsx";
+import { AboutUs } from "./pages/About Us.tsx";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
                         <Route path={"/sell-a-watch"} element={<SellAWatch/>}/>
                         <Route path={"/watches/:id"} element={<Watch/>}/>
                         <Route path={"*"} element={<NotFound/>}/>
+                        <Route path={"/about-us"} element={<AboutUs/>}/>
                     </Route>
                 </Routes>
             </BrowserRouter>

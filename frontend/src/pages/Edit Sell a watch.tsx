@@ -42,7 +42,7 @@ export const EditSellAWatch = () => {
                     brand: data.brand,
                     model: data.model,
                     price: data.price,
-                    image: watch.image, // Assuming watch.image is set correctly
+                    image: watch.image_url, // Assuming watch.image is set correctly
                 }),
             });
 

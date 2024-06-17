@@ -65,7 +65,6 @@ export const Watch = () => {
                     <h1>Watch Details</h1>
                     {watch.image_url && (
                         <div>
-                            <p>Image Filename: {watch.image_url}</p>
                             <img
                                 src={`http://localhost:3001/uploads/${watch.image_url}`}
                                 alt={`${watch.brand} ${watch.model}`}

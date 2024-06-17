@@ -5,22 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5375e22f-cafc-4ceb-8f1f-195a57f728f2" name="Changes" comment="finalizing">
-      <change afterPath="$PROJECT_DIR$/backend/uploads/1718625272367-download.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/1718626990319-download.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/1718627243672-download.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/backend/uploads/download.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/m128238-0008_collection_upright_landscape.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/rolex.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/uploads/watch-classic-logo-icon-design-vector.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/About Us.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/WatchController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/WatchController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/WatchModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/WatchModel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/multer-config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/multer-config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/interface/Watch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/interface/Watch.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/Buy a watch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Buy a watch.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/Edit Sell a watch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Edit Sell a watch.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Watch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Watch.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
@@ -33,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -68,24 +62,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Martin/Desktop/Watches-main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "ts.external.directory.path": "C:\\Users\\Martin\\WebstormProjects\\Watches\\frontend\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Martin/Desktop/Watches-main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Martin\\WebstormProjects\\Watches\\frontend\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Martin\WebstormProjects\Watches\frontend\public" />
@@ -131,7 +125,8 @@
       <workItem from="1715804402043" duration="1049000" />
       <workItem from="1715895321762" duration="60000" />
       <workItem from="1718360632134" duration="14917000" />
-      <workItem from="1718625128355" duration="4042000" />
+      <workItem from="1718625128355" duration="8538000" />
+      <workItem from="1718633941213" duration="715000" />
     </task>
     <task id="LOCAL-00001" summary="finalizing">
       <option name="closed" value="true" />
@@ -141,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718376597294</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="finalizing">
+      <option name="closed" value="true" />
+      <created>1718629676204</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718629676204</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

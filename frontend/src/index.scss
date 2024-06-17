@@ -25,16 +25,16 @@ body {
 
 .navbar {
   background-color: #ff7300;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1em;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
+
 
 .navbar .logo {
   font-size: 1.5rem;
@@ -203,4 +203,167 @@ main {
 .not-found p {
   font-size: 1.2em;
   color: #111;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial, sans-serif';
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: black;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #000;
+
+    &:focus {
+      border-color: #FF7300;
+      outline: none;
+      box-shadow: 0 0 5px rgba(255, 115, 0, 0.5);
+    }
+  }
+
+  input[type="file"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+
+    &:focus {
+      border-color: #FF7300;
+      outline: none;
+      box-shadow: 0 0 5px rgba(255, 115, 0, 0.5);
+    }
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    background: #FF7300;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+      background: darken(#FF7300, 10%);
+    }
+  }
+
+  h4 {
+    margin: -0.5rem 0 1rem 0;
+    color: #e74c3c;
+    font-size: 0.875rem;
+  }
+}
+
+.about-us-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    font-size: 2.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+  }
+
+  // Media query for responsiveness
+  @media (max-width: 600px) {
+    padding: 30px;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+}
+// Buy a watch style
+.buy-watch-container {
+  text-align: center;
+}
+
+.centered {
+  margin-bottom: 20px;
+}
+
+.watches-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.watch-item {
+  flex: 0 1 30%; /* Adjust width as needed */
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.watch-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.watch-details {
+  text-align: center;
+}
+
+.watch-details p {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .watch-item {
+    flex: 0 1 45%; /* Adjust width for smaller screens */
+  }
 }

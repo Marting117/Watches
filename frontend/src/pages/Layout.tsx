@@ -9,6 +9,7 @@ export const Layout = () => {
                 <li><Link to={"/sell-a-watch"}>
                     <button className="sellawatch">Sell a Watch</button>
                 </Link></li>
+                <li><Link to={"/about-us"}>About Us</Link></li>
             </nav>
 
             <Outlet/>

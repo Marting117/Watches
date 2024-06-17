@@ -1,3 +1,5 @@
+// BuyAWatch.tsx
+
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Watch as IWatch } from "../interface/Watch.ts";
@@ -23,25 +25,26 @@ export const BuyAWatch = () => {
     }, []);
 
     return (
-        <div>
-            <h1>Buy a Watch</h1>
-            <ul>
+        <div className="buy-watch-container">
+            <h1 className="centered">Buy a Watch</h1>
+            <div className="watches-table">
                 {watches.map((watch: IWatch) => (
-                    <li key={watch.id}>
-                        <Link to={`/watches/${watch.id}`}>
-                            <div>
-                                {watch.image_url && (
-                                    <img src={`http://localhost:3001/uploads/${watch.image_url}`} alt={`${watch.brand} ${watch.model}`} style={{ width: '100px', height: '100px', objectFit: 'cover', marginRight: '20px' }} />
-                                )}
-                                <p>Brand: {watch.brand}</p>
-                                <p>Model: {watch.model}</p>
-                                <p>Price: {watch.price}$</p>
-
-                            </div>
-                        </Link>
-                    </li>
+                    <Link to={`/watches/${watch.id}`} key={watch.id} className="watch-item">
+                        {watch.image_url && (
+                            <img
+                                src={`http://localhost:3001/uploads/${watch.image_url}`}
+                                alt={`${watch.brand} ${watch.model}`}
+                                className="watch-image"
+                            />
+                        )}
+                        <div className="watch-details">
+                            <p>Brand: {watch.brand}</p>
+                            <p>Model: {watch.model}</p>
+                            <p>Price: {watch.price}$</p>
+                        </div>
+                    </Link>
                 ))}
-            </ul>
+            </div>
         </div>
     );
 };
