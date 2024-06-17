@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Watch } from '../interface/Watch';
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { Watch as IWatch } from "../interface/Watch.ts";
 
 export const BuyAWatch = () => {
-    const [watches, setWatches] = useState<Watch[]>([]);
+    const [watches, setWatches] = useState<IWatch[]>([]);
 
     useEffect(() => {
         const getWatches = async () => {
@@ -26,22 +26,17 @@ export const BuyAWatch = () => {
         <div>
             <h1>Buy a Watch</h1>
             <ul>
-                {watches.map((watch: Watch) => (
+                {watches.map((watch: IWatch) => (
                     <li key={watch.id}>
                         <Link to={`/watches/${watch.id}`}>
-                            <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
-                                {watch.image && (
-                                    <img
-                                        src={`http://localhost:3001/${watch.image}`}
-                                        alt={`${watch.brand} ${watch.model}`}
-                                        style={{ width: '100px', height: '100px', objectFit: 'cover', marginRight: '20px' }}
-                                    />
+                            <div>
+                                {watch.image_url && (
+                                    <img src={`http://localhost:3001/uploads/${watch.image_url}`} alt={`${watch.brand} ${watch.model}`} style={{ width: '100px', height: '100px', objectFit: 'cover', marginRight: '20px' }} />
                                 )}
-                                <div>
-                                    <p>Brand: {watch.brand}</p>
-                                    <p>Model: {watch.model}</p>
-                                    <p>Price: {watch.price}$</p>
-                                </div>
+                                <p>Brand: {watch.brand}</p>
+                                <p>Model: {watch.model}</p>
+                                <p>Price: {watch.price}$</p>
+
                             </div>
                         </Link>
                     </li>

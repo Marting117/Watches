@@ -16,7 +16,7 @@ export const EditSellAWatch = () => {
     useEffect(() => {
         const getWatch = async () => {
             try {
-                const result = await fetch(`http://localhost:3002/api/watches/${id}`);
+                const result = await fetch(`http://localhost:3001api/watches/${id}`);
                 const fetchedWatch = await result.json();
                 console.log({ fetchedWatch });
                 setWatch(fetchedWatch);
@@ -33,7 +33,7 @@ export const EditSellAWatch = () => {
             // Perform form data validation if needed
 
             // Send PUT request to update watch data
-            const response = await fetch(`http://localhost:3002/api/watch/${id}`, {
+            const response = await fetch(`http://localhost:3001/api/watch/${id}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
