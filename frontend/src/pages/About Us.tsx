@@ -1,14 +1,14 @@
 export const AboutUs = () => {
     return (
         <div className="about-us-content">
-            <h1>A Passion for Time</h1>
-            <p>We at are more than just watch resellers; we're passionate enthusiasts driven by a love for precision, design, and the art of telling time. We believe that a watch is more than just an accessory; it's a reflection of your style, a statement piece, and a trusted companion that marks life's moments.</p>
+            <h1>Welcome to Our Marketplace</h1>
+            <p>We bring together watch enthusiasts, collectors, and sellers. Our platform is designed to make buying and selling watches a seamless and enjoyable experience. Whether you're looking to add a new timepiece to your collection or find a new home for a cherished watch, we provide the tools and support to make it happen.</p>
 
-            <h1>Our Story</h1>
-            <p>Our story began in 1978. Since then, we've dedicated ourselves to reviewing and reselling high-quality watches that combine timeless design with innovative features.</p>
+            <h1>Our Journey</h1>
+            <p>Founded in 2010, we started as a small boutique dedicated to high-quality watches. Over the last decade, we've grown into a trusted online marketplace where people from around the world can buy and sell watches with confidence. Our commitment to authenticity, quality, and customer satisfaction has been the cornerstone of our success.</p>
 
-            <h1>Our Commitment</h1>
-            <p>We are committed to providing exceptional and sustainable timepieces. We believe that our watches should not only tell time but also stand the test of time.</p>
+            <h1>Our Promise</h1>
+            <p>We promise to provide a secure and transparent platform for all your watch transactions. Our team of experts is dedicated to ensuring that every watch listed is accurately represented and meets our high standards. We strive to make every interaction on our site a positive one, offering support and guidance every step of the way.</p>
         </div>
     )
 }

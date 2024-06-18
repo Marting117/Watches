@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Watch as IWatch } from "../interface/Watch.ts";
-import { EditSellAWatch } from "./Edit Sell a watch.tsx"; // Adjust import path based on your file structure
+import { EditAWatch } from "./Edit a watch.tsx";
 
 export const Watch = () => {
     const navigation = useNavigate();
@@ -38,12 +38,10 @@ export const Watch = () => {
         })
             .then((r) => {
                 console.log(r);
-                // Optionally show a success message or handle navigation
                 navigation("/buy-a-watch");
             })
             .catch((error) => {
                 console.error("Error deleting watch:", error);
-                // Handle error state or display error message
             });
     };
 
@@ -59,30 +57,30 @@ export const Watch = () => {
     return (
         <>
             {isEditFormOpen ? (
-                <EditSellAWatch />
+                <EditAWatch />
             ) : (
-                <div>
+                <div className="watch-details">
                     <h1>Watch Details</h1>
                     {watch.image_url && (
                         <div>
                             <img
                                 src={`http://localhost:3001/uploads/${watch.image_url}`}
                                 alt={`${watch.brand} ${watch.model}`}
-                                style={{ width: "100px", height: "100px", objectFit: "cover", marginRight: "20px", cursor: "pointer" }}
+                                className="watch-image"
                                 onClick={() => openModal(`http://localhost:3001/uploads/${watch.image_url}`)}
                             />
                         </div>
                     )}
-                    <p>Brand: {watch.brand}</p>
-                    <p>Model: {watch.model}</p>
-                    <p>Price: {watch.price}$</p>
+                    <p><strong>Brand:</strong> {watch.brand}</p>
+                    <p><strong>Model:</strong> {watch.model}</p>
+                    <p><strong>Price:</strong> {watch.price}$</p>
 
-                    <button onClick={deleteWatch}>Delete Watch</button>
-                    <button onClick={editWatch}>Edit Watch</button>
+                    <div className="action-buttons">
+                        <button className="delete-button" onClick={deleteWatch}>Buy this watch</button>
+                        <button className="edit-button" onClick={editWatch}>Edit Watch</button>
+                    </div>
                 </div>
             )}
-
-            {/* Modal for displaying bigger image */}
             {showModal && (
                 <div className="modal" onClick={closeModal}>
                     <img src={modalImage} alt="Watch" className="modal-image" />

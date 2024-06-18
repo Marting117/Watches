@@ -1,53 +1,87 @@
-import { useForm } from 'react-hook-form';
-import { useNavigate } from 'react-router-dom';
+import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 
 export const SellAWatch = () => {
-    const navigation = useNavigate();
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-    } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
+    const navigate = useNavigate();
 
     const onSubmit = async (data: any) => {
-        try {
-            const formData = new FormData();
-            formData.append('brand', data.brand);
-            formData.append('model', data.model);
-            formData.append('price', data.price);
-            formData.append('image', data.image[0]); // Assuming 'image' is the file input name
+        const formData = new FormData();
+        formData.append('brand', data.brand);
+        formData.append('model', data.model);
+        formData.append('price', data.price);
+        formData.append('image', data.image[0]);
 
-            const response = await fetch(`http://localhost:3001/api/watch`, {
-                method: "POST",
+        try {
+            const response = await fetch('http://localhost:3001/api/watch', {
+                method: 'POST',
                 body: formData,
             });
 
             if (!response.ok) {
-                throw new Error('Error creating watch');
+                throw new Error("Failed to create watch");
             }
 
-            navigation("/buy-a-watch");
+            // Navigate to "Buy a Watch" page after successful form submission
+            navigate("/buy-a-watch");
         } catch (error) {
-            console.error('Error creating watch:', error);
-            // Optionally handle error feedback to the user
+            console.error("Error creating watch:", error);
+            // Handle error state or display error message
         }
     };
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
-            <label>Brand:</label>
-            <input type="text" {...register("brand", { required: true })} />
-            {errors.brand && <h4>Brand is required</h4>}
-            <label>Model:</label>
-            <input type="text" {...register("model", { required: true })} />
-            {errors.model && <h4>Model is required</h4>}
-            <label>Price:</label>
-            <input type="number" {...register("price", { required: true })} />
-            {errors.price && <h4>Price is required</h4>}
-            <label>Image:</label>
-            <input type="file" {...register("image", { required: true })} />
-            {errors.image && <h4>Image is required</h4>}
-            <input type="submit" />
-        </form>
+        <div className="sell-watch-container">
+            <h1>Sell Your Watch</h1>
+            <form onSubmit={handleSubmit(onSubmit)} className="sell-watch-form">
+                <div className="form-group">
+                    <label htmlFor="brand">Brand:</label>
+                    <input
+                        type="text"
+                        id="brand"
+                        {...register("brand", { required: true })}
+                        className={errors.brand ? "error" : ""}
+                    />
+                    {errors.brand && <span className="error-message">Brand is required</span>}
+                </div>
+
+                <div className="form-group">
+                    <label htmlFor="model">Model:</label>
+                    <input
+                        type="text"
+                        id="model"
+                        {...register("model", { required: true })}
+                        className={errors.model ? "error" : ""}
+                    />
+                    {errors.model && <span className="error-message">Model is required</span>}
+                </div>
+
+                <div className="form-group">
+                    <label htmlFor="price">Price:</label>
+                    <input
+                        type="number"
+                        id="price"
+                        {...register("price", { required: true })}
+                        className={errors.price ? "error" : ""}
+                    />
+                    {errors.price && <span className="error-message">Price is required</span>}
+                </div>
+
+                <div className="form-group">
+                    <label htmlFor="image">Image:</label>
+                    <input
+                        type="file"
+                        id="image"
+                        {...register("image", { required: true })}
+                        className={errors.image ? "error" : ""}
+                    />
+                    {errors.image && <span className="error-message">Image is required</span>}
+                </div>
+
+                <div className="button-group1">
+                    <button type="submit" className="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
     );
 };

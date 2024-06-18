@@ -12,7 +12,7 @@ export class WatchModel {
 
     async getSingleWatch(id: number) {
         const [rows] = await this.conn.query("SELECT id, brand, model, price, image_url FROM watches WHERE id = ?", [id]);
-        return rows[0]; // Return the first (and presumably only) result
+        return rows[0];
     }
 
     async createWatch(watchData: any) {

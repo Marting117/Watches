@@ -1,5 +1,3 @@
-// BuyAWatch.tsx
-
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Watch as IWatch } from "../interface/Watch.ts";
@@ -37,10 +35,9 @@ export const BuyAWatch = () => {
                                 className="watch-image"
                             />
                         )}
-                        <div className="watch-details">
-                            <p>Brand: {watch.brand}</p>
-                            <p>Model: {watch.model}</p>
-                            <p>Price: {watch.price}$</p>
+                        <div className="watch-details1">
+                            <p>{watch.brand} {watch.model}</p>
+                            <p>{watch.price}$</p>
                         </div>
                     </Link>
                 ))}
