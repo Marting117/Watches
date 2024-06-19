@@ -53,7 +53,6 @@ export const EditAWatch = () => {
                 throw new Error("Failed to update watch");
             }
 
-            // Navigate to another page after successful update
             navigate("/buy-a-watch");
         } catch (error) {
             console.error("Error updating watch:", error);

@@ -51,7 +51,6 @@ const updateWatch = async (req: Request, res: Response) => {
 const deleteWatch = async (req: Request, res: Response) => {
     const { id } = req.params;
     try {
-        // Get the image_url of the watch to delete
         const watch = await watchModel.getSingleWatch(parseInt(id));
         if (!watch) {
             throw new Error("Watch not found");

@@ -22,11 +22,9 @@ export const SellAWatch = () => {
                 throw new Error("Failed to create watch");
             }
 
-            // Navigate to "Buy a Watch" page after successful form submission
             navigate("/buy-a-watch");
         } catch (error) {
             console.error("Error creating watch:", error);
-            // Handle error state or display error message
         }
     };
 
